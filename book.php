@@ -5,6 +5,13 @@ Registration successful! Book your car now
 <!DOCTYPE html>
 <html>
   <head>
+     <style type="text/css">
+       #my_map
+       {
+        height: 600px;
+        width: 600px;
+       }
+     </style>
   </head>
   <body>
     <form  method="post">
@@ -20,5 +27,15 @@ Registration successful! Book your car now
         </select> 
       </p>
     </form>
+    <input type="text" id="meetika">
+    <div id="my_map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/geocomplete/1.7.0/jquery.geocomplete.js"></script>
+    <script>
+      $('#meetika').geocomplete({
+        map: "#my_map"
+      });
+    </script>
   </body>
 </html>
