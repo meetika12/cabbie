@@ -1,21 +1,22 @@
 <?php
 session_start();
 
-$link = mysqli_connect('localhost', 'root', 'meetika','greenool');
-if (!$link) {
+$link = mysqli_connect('localhost', 'root', '','greenool');
+if (!$link) 
+{
     die('Could not connect: ' . mysqli_error());
 }
-//echo 'Connected successfully';
 
 $name=$_POST['name'];
-$uname=$_POST['uname'];
+$uname=$_POST['username'];
 $email=$_POST['email'];
 $address=$_POST['address'];
 $contact=$_POST['contact'];
 $password=$_POST['password'];
 $gender=$_POST['gender'];
 
-$query = "INSERT INTO registration VALUES ('$name','$uname' '$email','$password','$contact','$address','$gender')";
+$query = "INSERT INTO registration VALUES ('$name','$uname', '$email','$password','$contact','$address','$gender')";
+
 mysqli_query($link, $query) or die(mysqli_error($link));
 
 //echo password_hash("$password", PASSWORD_DEFAULT)."\n";
@@ -42,7 +43,7 @@ function redirect($url) {
 	header('Location: '.$url);
 	 ob_end_flush(); 
 	 die(); }
-redirect("/meetika/greenooling/login.php");
+redirect("/greenooling/login.php");
 }
 else
 {
