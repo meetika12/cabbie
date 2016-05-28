@@ -28,7 +28,8 @@ mysqli_close($link);
   </head>
   <body>
     <link rel="stylesheet" href="indexstyle.css">
-   <div class="overlay"></div>
+    
+   <div class="overlay bback"></div>
 <div class="main">
   
   

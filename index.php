@@ -9,7 +9,7 @@ $url = 'img/carpooling-wordle.jpg';
  <head>
   
 
- 
+<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'> 
  <!-- <div class="overlay"></div>
 <div class="main">
   
@@ -40,15 +40,18 @@ body
 
 
 <link rel="stylesheet" href="indexstyle.css">
-<div class="overlay"></div>
+<div class="overlay iback "></div>
 <div class="main">
+
   
   
-<a href="register.php">Register</a>
-<a href="login.php">Login</a>
 <div id="txt">
  <h3> Cabbie</h3>
  <h5>Pool your cab now</h5>
+</div>
+<div class="links">
+ <a href="register.php">Register</a>
+<a href="login.php">Login</a>
 </div>
 </div>
 <body>
