@@ -1,0 +1,50 @@
+html, body
+{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+.main, .overlay, .txt
+{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif
+}
+.overlay
+{
+  background: url(img/project1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  filter: alpha(opacity=20);
+}
+.main
+{
+   text-align: right;
+   color: white;
+   line-height: 0.5;
+   font-size:26px;
+   background:rgba(0, 0. 0, 0.6);
+   padding-top: 2%;
+   
+}
+#txt
+{
+  text-align: center;
+   font-size:40px;
+   
+   color: #228b22;
+   /*line-height: 0.5;
+  font-size:36px;
+   background:rgba(0, 0. 0, 0.6);
+   padding-top: 2%;*/
+  
+}
+

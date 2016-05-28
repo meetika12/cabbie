@@ -1,7 +1,7 @@
 <?php
 include('session.php');
 ?>
-Registration successful! Book your car now
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,9 +14,14 @@ Registration successful! Book your car now
      </style>
   </head>
   <body>
-    <form  method="post">
+    <link rel="stylesheet" href="registerstyle.css">
+   <h2> Registration successful! Book your car now</h2>
+    <div class="logout"><a href="logout.php">Logout</a></div>
+    <form action="booking_check.php" method="post">
+      
       <p>
-        <select name="select area of pickup">
+      <div> <label> Select area of pickup </label>
+        <select name="pickup" class="txt"> 
           <option value="bhawarkua">bhawarkua</option>
           <option value="manik bagh">manik bagh</option>
           <option value="janjeerwala">janjeerwala</option>
@@ -24,10 +29,12 @@ Registration successful! Book your car now
           <option value="sapna sangeeta">Sapna sangeeta</option>
           <option value="usha nagar">usha nagar</option>
           <option value="airport road">airport road</option>
-        </select> 
+        </select> </div>
+      <div><label>select destination</label>  <input type="text" id="meetika" name="destination"></div>
+       <div> <input type="submit" value="Book" class="btn"></div>
       </p>
     </form>
-    <input type="text" id="meetika">
+   
     <div id="my_map"></div>
     <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 

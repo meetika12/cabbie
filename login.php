@@ -14,12 +14,13 @@ session_start();
 	
 	
 		<form action="login_check.php" method="post">
+			<link rel="stylesheet" href="registerstyle.css">
 			<p>
 				
-				Username<input type="text" name="username" required="required"/><br>
-				Password<input type="password" name="password" required="required"/><br>
+		<div><label>Username</label><input type="text" name="username" required="required" class="txt"/></div><br>
+		<div><label>Password</label><input type="password" name="password" required="required"/ class="txt"></div><br>
 				
-				<input type="submit" value="login"/>
+		<div>		<input type="submit" value="login" class="btn"/></div>
 			
 			
 			</p>
