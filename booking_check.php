@@ -32,13 +32,16 @@ mysqli_close($link);
    <div class="overlay bback"></div>
 <div class="main">
   
-  
-<a href="logout.php">Logout</a>
+ 
 
 <div id="txt">
+   
  <h3> Booking successful!! </h3>
  
 </div>
+<div class="links">
+<a href="logout.php">Logout</a>
+</div> 
 </div>
 <body>
 
